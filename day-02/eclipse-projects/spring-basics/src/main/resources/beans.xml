@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions go here -->
+
+	<bean name="ps1" class="com.infosys.service.ProductService" />
+	<bean name="ps2" class="com.infosys.service.ProductService" />
+	
+</beans>
