@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+
+	<bean name="dao" class="com.infosys.dao.JdbcProductDao"  >
+		<!-- dao.setDataSource(dbcp); -->
+		<property name="dataSource" ref="dbcp" /> 
+	</bean>
+
+	
+	<!-- this bean represents a connection pool, and since this class 
+	implements javax.sql.DataSource, we can inject this object/bean
+	to any bean having a dependency of DataSource -->
+	
+	<bean name="dbcp" class="org.apache.commons.dbcp2.BasicDataSource">
+		<!-- property injection via setters -->
+		<property name="driverClassName" value="org.h2.Driver" />
+		<property name="url" value="jdbc:h2:tcp://localhost/~/northwind" />
+		<property name="username" value="root" />
+		<property name="password" value="Welcome#123" />
+		
+		<property name="initialSize" value="10" />
+		<property name="maxTotal" value="100" />
+		<property name="maxWaitMillis" value="500" />
+	</bean>
+	
+</beans>
