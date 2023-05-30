@@ -6,9 +6,9 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean name="jdbc-dao" class="com.infosys.dao.JdbcProductDao" />
+	<bean scope="singleton" lazy-init="true" name="jdbc-dao" class="com.infosys.dao.JdbcProductDao" />
 	
-	<bean name="dummy-dao" class="com.infosys.dao.DummyProductDao" />
+	<bean scope="singleton" lazy-init="true" name="dummy-dao" class="com.infosys.dao.DummyProductDao" />
 	
 	<!-- 
 	an object of com.infosys.dao.DummyProductDao is an instance of:
