@@ -1,5 +1,7 @@
 package com.infosys.dao;
 
+import java.util.List;
+
 import com.infosys.entity.Customer;
 
 public interface CustomerDao {
@@ -22,5 +24,27 @@ public interface CustomerDao {
 	public default String getCustomerName(String customerId) throws DaoException {
 		throw new DaoException("Method not implemented yet");
 	}
+	
+	public default List<Customer> getAllCustomers() throws DaoException {
+		throw new DaoException("Method not implemented yet");
+	}
 
+	public default List<Customer> getCustomersFromCity(String city) throws DaoException {
+		throw new DaoException("Method not implemented yet");
+	}
+	
+	public default List<Customer> getCustomersFromCountry(String country) throws DaoException {
+		throw new DaoException("Method not implemented yet");
+	}
 }
+
+
+
+
+
+
+
+
+
+
+

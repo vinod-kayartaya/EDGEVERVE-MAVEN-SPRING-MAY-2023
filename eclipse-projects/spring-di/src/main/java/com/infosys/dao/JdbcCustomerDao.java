@@ -31,6 +31,16 @@ public class JdbcCustomerDao implements CustomerDao{
 	}
 	
 	
+	
+	// this can now be used for autowiring
+	public JdbcCustomerDao(DataSource dataSource) {
+		System.out.println("JdbcCustomerDao(DataSource dataSource) called");
+		this.dataSource = dataSource;
+	}
+
+
+
+
 	// setter is also known as "writable property" or "mutator"
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
@@ -96,22 +106,5 @@ public class JdbcCustomerDao implements CustomerDao{
 		}
 
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

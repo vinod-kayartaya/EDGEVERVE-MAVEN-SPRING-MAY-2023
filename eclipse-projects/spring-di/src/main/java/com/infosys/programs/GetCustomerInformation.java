@@ -6,7 +6,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.infosys.config.AppConfig1;
 import com.infosys.dao.CustomerDao;
-import com.infosys.entity.Customer;
 
 public class GetCustomerInformation {
 
