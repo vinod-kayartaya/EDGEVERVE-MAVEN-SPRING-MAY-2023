@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="dao1" class="com.infosys.dao.CustomerDao" />
+
+
+	<bean name="dao2" class="com.infosys.dao.CustomerDao">
+		<constructor-arg name="jdbcInfo">
+			<map>
+				<entry key="url" value="jdbc:h2:tcp://localhost/~/northwind" />
+				<entry key="user" value="sa" />
+				<entry key="password" value="" />
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean name="dao3" class="com.infosys.dao.CustomerDao">
+		<property name="jdbcInfo">
+			<map>
+				<entry key="url" value="jdbc:mysql://localhost/northwind" />
+				<entry key="user" value="root" />
+				<entry key="password" value="Welcome#123" />
+			</map>
+		</property>
+	</bean>
+
+	<bean name="dao4" class="com.infosys.dao.CustomerDao">
+		<constructor-arg name="jdbcProps">
+			<props>
+				<prop key="url">jdbc:mysql://localhost/northwind</prop>
+				<prop key="user">root</prop>
+				<prop key="password">Welcome#123</prop>
+			</props>
+		</constructor-arg>
+	</bean>
+
+	<bean name="dao5" class="com.infosys.dao.CustomerDao">
+		<property name="jdbcProps">
+			<props>
+				<prop key="url">jdbc:mysql://localhost/northwind</prop>
+				<prop key="user">root</prop>
+				<prop key="password">Welcome#123</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean name="dao6" class="com.infosys.dao.CustomerDao">
+		<constructor-arg name="jdbcConfig">
+			<set>
+				<value>root</value>
+				<value>Welcome#123</value>
+				<value>jdbc:mysql://localhost/northwind</value>
+			</set>
+		</constructor-arg>
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

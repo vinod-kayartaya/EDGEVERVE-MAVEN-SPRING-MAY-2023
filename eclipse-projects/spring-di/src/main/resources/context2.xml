@@ -12,7 +12,7 @@
 		<property name="password" value="Welcome#123" />
 	</bean>
 	
-	<bean name="jt" class="org.springframework.jdbc.core.JdbcTemplate"
+	<bean name="jt,jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
 		autowire="byType" />
 	
 	<bean name="dao" class="com.infosys.dao.JdbcTemplateCustomerDao" 

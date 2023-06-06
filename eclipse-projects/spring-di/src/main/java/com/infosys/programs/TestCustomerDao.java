@@ -17,7 +17,7 @@ public class TestCustomerDao {
 		ctx = new ClassPathXmlApplicationContext("context2.xml");
 		dao = ctx.getBean(CustomerDao.class);
 		
-		test5();
+		test2();
 		
 		ctx.close();
 	}

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="dao1" class="com.infosys.dao.ProductDao">
+		<!-- the default, no-arg constructor is called for this bean -->
+	</bean>
+
+
+	<bean name="dao2" class="com.infosys.dao.ProductDao">
+		<constructor-arg index="2" value="Welcome#123" />
+		<constructor-arg index="0"
+			value="jdbc:h2:tcp://localhost/~/northwind" />
+		<constructor-arg index="1" value="root" />
+	</bean>
+
+	<bean name="dao3" class="com.infosys.dao.ProductDao">
+		<constructor-arg name="password" value="Welcome#123" />
+		<constructor-arg name="url"
+			value="jdbc:h2:tcp://localhost/~/northwind" />
+		<constructor-arg name="user" value="root" />
+	</bean>
+
+	<bean name="dao4" class="com.infosys.dao.ProductDao">
+		<!-- if index or name is not specified, the sequence matter -->
+		<constructor-arg
+			value="jdbc:h2:tcp://localhost/~/northwind" />
+		<constructor-arg value="root" />
+		<constructor-arg value="Welcome#123" />
+	</bean>
+
+	<bean name="dao5" class="com.infosys.dao.ProductDao">
+		<constructor-arg name="password" value="Welcome#123" />
+		<constructor-arg name="url"
+			value="jdbc:h2:tcp://localhost/~/northwind" />
+		<constructor-arg name="user" value="root" />
+		<constructor-arg name="autoCommit" value="true" />
+	</bean>
+
+	<bean name="dao6" class="com.infosys.dao.ProductDao">
+		<constructor-arg name="url"
+			value="jdbc:h2:tcp://localhost/~/northwind" />
+		<constructor-arg name="user" value="root" />
+		<constructor-arg name="password" value="Welcome#123" />
+		<constructor-arg name="autoCommit" value="true" />
+		<constructor-arg name="batchSize" value="100" />
+	</bean>
+
+	<bean name="dao7" class="com.infosys.dao.ProductDao">
+		<constructor-arg name="a"
+			value="jdbc:h2:tcp://localhost/~/northwind" />
+		<constructor-arg name="b" value="root" />
+	</bean>
+
+	<bean name="dao8" class="com.infosys.dao.ProductDao">
+		<constructor-arg name="a"
+			value="jdbc:h2:tcp://localhost/~/northwind" />
+		<constructor-arg name="b" value="123" type="java.lang.Integer" />
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -20,6 +20,7 @@ public class JdbcTemplateCustomerDao implements CustomerDao {
 		this.template = template;
 	}
 
+	// this setter exposes a writable property called "jdbcTemplate"
 	public void setJdbcTemplate(JdbcTemplate template) {
 		this.template = template;
 	}
