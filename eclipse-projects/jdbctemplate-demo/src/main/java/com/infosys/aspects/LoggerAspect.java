@@ -1,4 +1,4 @@
-package com.infosys.aop;
+package com.infosys.aspects;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -20,7 +20,7 @@ public class LoggerAspect {
 	
 	@Before("execution(public * com.infosys.dao.ProductDao.*(..))")
 	public void logBefore() {
-		System.out.println("Entering _____ method");
+		System.out.println("Entering _______ method");
 	}
 	
 	@After("execution(public * com.infosys.dao.ProductDao.*(..))")

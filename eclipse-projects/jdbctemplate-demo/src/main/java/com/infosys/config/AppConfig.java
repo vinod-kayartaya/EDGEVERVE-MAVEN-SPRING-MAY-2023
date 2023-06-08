@@ -10,7 +10,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 @Configuration
-@ComponentScan(basePackages = { "com.infosys.dao", "com.infosys.aop" })
+@ComponentScan(basePackages = { "com.infosys.dao", "com.infosys.aspects" })
 @EnableAspectJAutoProxy
 public class AppConfig {
 	@Bean
@@ -32,4 +32,5 @@ public class AppConfig {
 	public JdbcTemplate jdbcTemplate(DataSource ds) { // DI
 		return new JdbcTemplate(ds); // Manual wiring
 	}
+	
 }
