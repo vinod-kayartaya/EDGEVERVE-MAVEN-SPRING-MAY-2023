@@ -6,10 +6,12 @@ import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 @Configuration
-@ComponentScan(basePackages = { "com.infosys.dao" })
+@ComponentScan(basePackages = { "com.infosys.dao", "com.infosys.aop" })
+@EnableAspectJAutoProxy
 public class AppConfig {
 	@Bean
 	public BasicDataSource h2ds() {

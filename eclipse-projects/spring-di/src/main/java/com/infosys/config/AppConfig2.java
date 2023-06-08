@@ -6,7 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages= {"com.infosys.dao"}) // searches for Components in the specified packages and sub-packages
+@ComponentScan(basePackages= {"com.infosys.dao"}) 
+// searches for Components in the specified packages and sub-packages
 public class AppConfig2 {
 	
 	@Bean

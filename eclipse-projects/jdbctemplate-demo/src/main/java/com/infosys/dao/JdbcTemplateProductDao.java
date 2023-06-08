@@ -1,5 +1,6 @@
 package com.infosys.dao;
 
+import java.sql.PreparedStatement;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,13 +35,26 @@ public class JdbcTemplateProductDao implements ProductDao {
 	};
 
 	@Override
-	public void addProduct(Product product) throws DaoException {
-
+	public void addProduct(Product p) throws DaoException {
+		String sql = "insert into products values (?,?,?,?,?,?,?,?,?,?)";
+		template.execute(sql, (PreparedStatement ps) -> {
+			ps.setInt(1, p.getProductId());
+			ps.setString(2, p.getProductName());
+			ps.setInt(3, p.getSupplierId());
+			ps.setInt(4, p.getCategoryId());
+			ps.setString(5, p.getQuantityPerUnit());
+			ps.setDouble(6, p.getUnitPrice());
+			ps.setInt(7, p.getUnitsInStock());
+			ps.setInt(8, p.getUnitsOnOrder());
+			ps.setInt(9, p.getReorderLevel());
+			ps.setInt(10, p.getDiscontinued());
+			return ps.executeUpdate();
+		});
 	}
 
 	@Override
 	public Product getProductById(int productId) throws DaoException {
-		String sql ="select * from products where product_id=?";
+		String sql = "select * from products where product_id=?";
 		return template.queryForObject(sql, prm, productId);
 	}
 

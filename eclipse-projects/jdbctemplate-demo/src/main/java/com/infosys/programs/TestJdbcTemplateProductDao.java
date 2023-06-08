@@ -21,7 +21,8 @@ public class TestJdbcTemplateProductDao {
 		
 		// demo1();
 		// demo2();
-		demo3();
+		// demo3();
+		demo4();
 		
 		ctx.close();
 	}
@@ -46,4 +47,35 @@ public class TestJdbcTemplateProductDao {
 			System.out.println(p);
 		}
 	}
+	
+	static void demo4() {
+		Product p = new Product();
+		p.setProductId(102);
+		p.setProductName("Pepsi cola");
+		p.setSupplierId(1);
+		p.setCategoryId(1);
+		p.setQuantityPerUnit("250ml X 6 bottles");
+		p.setUnitPrice(240.0);
+		p.setUnitsInStock(190);
+		p.setUnitsOnOrder(130);
+		p.setReorderLevel(25);
+		p.setDiscontinued(0);
+		
+		dao.addProduct(p);
+		System.out.println("New product added");
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
