@@ -16,6 +16,10 @@ public class JdbcTemplateProductDao implements ProductDao {
 	// dependency
 	@Autowired
 	private JdbcTemplate template;
+	
+	public void setTemplate(JdbcTemplate template) {
+		this.template = template;
+	}
 
 	// row-mapper (maps one row of the ResultSet to a Product object)
 
@@ -81,7 +85,7 @@ public class JdbcTemplateProductDao implements ProductDao {
 
 	@Override
 	public List<Product> getDiscontinuedProducts() throws DaoException {
-		return template.query("select* from products where discontinued=1", prm);
+		return template.query("select* from products wherettt discontinued=1", prm);
 	}
 
 }

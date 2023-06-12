@@ -27,10 +27,11 @@ public class AppConfig {
 
 		return bds;
 	}
-	
+
 	@Bean
 	public JdbcTemplate jdbcTemplate(DataSource ds) { // DI
 		return new JdbcTemplate(ds); // Manual wiring
 	}
 	
+
 }

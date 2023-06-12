@@ -22,4 +22,5 @@ public interface ProductDao {
 	public List<Product> getOutOfStockProducts() throws DaoException;
 
 	public List<Product> getDiscontinuedProducts() throws DaoException;
+	
 }
