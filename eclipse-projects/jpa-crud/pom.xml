@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.infosys</groupId>
-	<artifactId>jpa-basics</artifactId>
+	<artifactId>jpa-crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -34,16 +34,25 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.persistence</groupId>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<version>8.0.33</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>
+				org.hibernate.orm</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>
+				6.2.4.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>
+				org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
 			<version>4.0.1</version>
 		</dependency>
-		<dependency>
-			<groupId>org.hibernate.orm</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>6.2.4.Final</version>
-		</dependency>
-
 
 	</dependencies>
+
 </project>
