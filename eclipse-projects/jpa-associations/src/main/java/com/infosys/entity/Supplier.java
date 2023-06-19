@@ -1,6 +1,7 @@
 package com.infosys.entity;
 
 import java.util.List;
+import java.util.Set;
 
 import com.infosys.model.Address;
 
@@ -9,6 +10,8 @@ import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -41,4 +44,25 @@ public class Supplier {
 	@OneToMany
 	@JoinColumn(name = "supplier_id")
 	private List<Product> productList;
+	
+	// Collection of all category of products supplied by this supplier
+	@ManyToMany
+	@JoinTable(name="products",
+			joinColumns = {@JoinColumn(name="supplier_id")},
+			inverseJoinColumns = {@JoinColumn(name="category_id")})
+	private Set<Category> categories;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

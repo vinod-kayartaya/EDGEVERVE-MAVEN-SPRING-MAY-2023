@@ -25,7 +25,7 @@ public class Category {
 	private byte[] picture;
 
 	// one category has many products
-	@OneToMany // (fetch = FetchType.EAGER)
+	@OneToMany  // (fetch = FetchType.EAGER)
 	@JoinColumn(name = "category_id")
 	private List<Product> productList;
 }

@@ -17,8 +17,7 @@ public class Product {
 	private Integer productId;
 	@Column(name = "product_name")
 	private String productName;
-	@Column(name = "supplier_id")
-	private Integer supplierId;
+	
 	@Column(name = "quantity_per_unit")
 	private String quantityPerUnit;
 	@Column(name = "unit_price")
@@ -34,6 +33,10 @@ public class Product {
 	
 	// many products belong to one category
 	@ManyToOne
-	@JoinColumn(name="category_id") // column of this table mapped to the @Id column in Category
+	@JoinColumn(name="category_id", insertable = false, updatable = false) // column of this table mapped to the @Id column in Category
 	private Category category;
+	
+	@ManyToOne
+	@JoinColumn(name="supplier_id", insertable = false, updatable = false) // foreign key column name
+	private Supplier supplier;
 }
