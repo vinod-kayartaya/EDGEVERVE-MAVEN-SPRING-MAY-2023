@@ -2,6 +2,7 @@ package com.infosys.programs;
 
 import com.infosys.entity.LineItem;
 import com.infosys.entity.Order;
+import com.infosys.utils.DateUtil;
 import com.infosys.utils.JpaUtil;
 import com.infosys.utils.KeyboardUtil;
 
@@ -22,9 +23,12 @@ public class GetOneOrder {
 			}
 			
 			System.out.printf("Order ID         : %d%n", ord1.getOrderId());
-			System.out.printf("Ordered date     : %s%n", ord1.getOrderDate());
-			System.out.printf("Required date    : %s%n", ord1.getRequiredDate());
-			System.out.printf("Shipped date     : %s%n", ord1.getShippedDate());
+			System.out.printf("Ordered date     : %s%n", DateUtil.toString(ord1.getOrderDate()));
+			System.out.printf("Required date    : %s%n", DateUtil.toString(ord1.getRequiredDate()));
+			System.out.printf("Shipped date     : %s%n", 
+					DateUtil.toString(ord1.getShippedDate())==null
+						? "Not shipped yet" 
+						:DateUtil.toString(ord1.getShippedDate()));
 			System.out.printf("Customer         : %s (%s - %s)%n", 
 					ord1.getCustomer().getCompanyName(),
 					ord1.getCustomer().getContactName(),
@@ -51,7 +55,7 @@ public class GetOneOrder {
 			System.out.println("--------------------------------------------------------------------------");
 			for(LineItem li: ord1.getLineItems()) {
 				System.out.printf("%-35s %10.2f %5d %10.2f %10.2f%n",
-						li.getProductId(), // to be changed to product name
+						li.getProduct().getProductName(), // to be changed to product name
 						li.getUnitPrice(),
 						li.getQuantity(),
 						li.getDiscount(),
