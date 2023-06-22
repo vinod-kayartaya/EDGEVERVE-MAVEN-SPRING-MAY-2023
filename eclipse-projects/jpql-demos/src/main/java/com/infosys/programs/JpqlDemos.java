@@ -17,7 +17,7 @@ public class JpqlDemos {
 	public static void main(String[] args) {
 		em = JpaUtil.entityManager();
 
-		demo11();
+		demo8();
 
 		em.close();
 	}
@@ -33,6 +33,7 @@ public class JpqlDemos {
 	}
 
 	static void demo10() {
+		// get the order id and order total for every customer from a city (try london, paris etc)
 		String city = KeyboardUtil.getString("Enter city: ");
 		String ql = "select li.orderId, ord.customer.companyName, sum(li.unitPrice*li.quantity*(1-li.discount)) "
 				+ "from Order ord join ord.lineItems as li "
