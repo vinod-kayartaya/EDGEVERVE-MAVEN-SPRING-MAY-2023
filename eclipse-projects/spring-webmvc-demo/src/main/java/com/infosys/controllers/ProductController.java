@@ -26,7 +26,7 @@ public class ProductController {
 	@RequestMapping(method=RequestMethod.GET, path="/add-product")
 	public String handleGetAddProduct(Model model) {
 		model.addAttribute("p", new Product());
-		return "/WEB-INF/pages/product-form.jsp";
+		return "product-form";
 	}
 	
 	@RequestMapping(method=RequestMethod.POST, path="/add-product")
@@ -35,7 +35,6 @@ public class ProductController {
 		return "redirect:/product-list";
 	}
 	
-	
 
 	@RequestMapping(path = "/product-list")
 	public String handleGetProductList(Model model) { // spring injects a storage object as a dependency
@@ -43,8 +42,9 @@ public class ProductController {
 		// spring stores this list of products with the name "products",
 		// which will be made available to the JSP in the "request" scope
 		model.addAttribute("products", dao.getAll());
+		model.addAttribute("title", "List of all products");
 
-		return "/WEB-INF/pages/display-products.jsp";
+		return "display-products";
 	}
 
 	@RequestMapping(path = "/products-by-price-range", method = RequestMethod.GET)
@@ -54,6 +54,22 @@ public class ProductController {
 			Model model) {
 		
 		model.addAttribute("products", dao.getByPriceRange(min, max));
-		return "/WEB-INF/pages/display-products.jsp";
+		model.addAttribute("title", "List of products between $%.1f and $%.1f".formatted(min, max));
+		
+		return "display-products";
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

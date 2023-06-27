@@ -9,12 +9,26 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @PropertySource({ "classpath:jdbc-info.properties" })
 @ComponentScan(basePackages = { 
 		"com.infosys.controllers", "com.infosys.dao" })
 public class AppConfig {
+	
+	// configure the ViewResolver
+	@Bean
+	public InternalResourceViewResolver viewResolver() {
+		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+		resolver.setPrefix("/WEB-INF/pages/");
+		resolver.setSuffix(".jsp");
+		// this will resolve a view name "display-products" as 
+		// prefix + viewName + suffix
+		// "/WEB-INF/pages/" + viewName + ".jsp"
+		// "/WEB-INF/pages/display-products.jsp"
+		return resolver;
+	}
 
 	@Bean
 	public JdbcTemplate jdbcTemplate(DataSource ds) { // DI

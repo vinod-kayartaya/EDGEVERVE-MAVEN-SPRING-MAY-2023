@@ -1,17 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ include file="./header.txt" %>
+
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Product list</title>
-</head>
-<body>
-	<h1>Product list</h1>
-	<hr>
-	<table border="1">
+	
+
+	<h3>List products by price range:</h3>
+	<form action="./products-by-price-range">
+		<div>
+			<label for="min_price">Minimum price: </label> <input type="text"
+				name="min_price" id="min_price" />
+		</div>
+		<div>
+			<label for="max_price">Maximum price: </label> <input type="text"
+				name="max_price" id="max_price" />
+		</div>
+		<button class="btn btn-primary">Submit</button>
+	</form>
+	
+	<h5>${title}</h5>
+
+	<table class="table table-striped table-bordered">
 		<thead>
 			<tr>
 				<th>Product name</th>
@@ -33,5 +41,5 @@
 			</c:forEach>
 		</tbody>
 	</table>
-</body>
-</html>
+
+<%@ include file="./footer.txt" %>

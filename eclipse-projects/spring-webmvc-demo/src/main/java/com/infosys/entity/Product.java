@@ -14,4 +14,9 @@ public class Product {
 	private Integer unitsOnOrder;
 	private Integer reorderLevel;
 	private Integer discontinued;
+	
+	public void setProductName(String productName) {
+		System.out.println("setProductName called with " + productName);
+		this.productName = productName;
+	}
 }
