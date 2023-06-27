@@ -27,6 +27,7 @@
 				<th>Unit price</th>
 				<th>Units in stock</th>
 				<th>Discontinued?</th>
+				<th>Action</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -37,9 +38,21 @@
 					<td>${p.unitPrice}</td>
 					<td>${p.unitsInStock}</td>
 					<td>${p.discontinued==1? "Yes": "No"}</td>
+					<td class="text-center">
+						<a href="./edit-product?productId=${p.productId}"><i class="bi bi-pencil"></i></a>
+						<a href="./delete-product?productId=${p.productId}"><i class="bi bi-trash"></i></a>
+					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 
 <%@ include file="./footer.txt" %>
+
+
+
+
+
+
+
+

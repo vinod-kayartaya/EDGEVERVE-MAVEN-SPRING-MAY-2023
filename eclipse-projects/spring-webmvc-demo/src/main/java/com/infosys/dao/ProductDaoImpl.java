@@ -60,4 +60,55 @@ public class ProductDaoImpl implements ProductDao {
 		});
 	}
 
+	@Override
+	public Product getProduct(Integer id) {
+		String sql = "select * from products where product_id=?";
+		return template.queryForObject(sql, prm, id);
+	}
+
+	@Override
+	public void updateProduct(Product product) {
+		String sql = "update products set product_name=?, supplier_id=?, category_id=?, "
+				+ "quantity_per_unit=?, unit_price=?, units_in_stock=?, units_on_order=?, "
+				+ "reorder_level=?, discontinued=? where product_id=?";
+		
+		template.execute(sql, (PreparedStatement ps) -> {
+			ps.setString(1, product.getProductName());
+			ps.setInt(2, product.getSupplierId());
+			ps.setInt(3, product.getCategoryId());
+			ps.setString(4, product.getQuantityPerUnit());
+			ps.setDouble(5, product.getUnitPrice());
+			ps.setInt(6, product.getUnitsInStock());
+			ps.setInt(7, product.getUnitsOnOrder());
+			ps.setInt(8, product.getReorderLevel());
+			ps.setInt(9, product.getDiscontinued());
+			ps.setInt(10, product.getProductId());
+
+			return ps.executeUpdate();
+		});
+		
+	}
+
+	@Override
+	public void deleteProduct(Integer productId) {
+		String sql = "delete from products where product_id=?";
+		template.execute(sql, (PreparedStatement ps) -> {
+			ps.setInt(1, productId);
+			return ps.executeUpdate();
+		});
+	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

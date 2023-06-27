@@ -52,8 +52,14 @@
 
 
 		<div>
-			<label for="discontinued">Discontinued: </label>
-			<sf:input path="discontinued" />
+			<label for="discontinued">Discontinued? </label>
+		
+			<sf:radiobutton id="discontinued_yes" path="discontinued" value="1"/> 
+			<label for="discontinued_yes">Yes</label>
+		 
+			<sf:radiobutton id="discontinued_no" path="discontinued" value="0"/> 
+			<label for="discontinued_no">No</label>
+			
 		</div>
 
 
