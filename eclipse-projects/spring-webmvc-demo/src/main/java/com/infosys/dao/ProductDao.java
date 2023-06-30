@@ -2,7 +2,9 @@ package com.infosys.dao;
 
 import java.util.List;
 
+import com.infosys.entity.Category;
 import com.infosys.entity.Product;
+import com.infosys.entity.Supplier;
 
 public interface ProductDao {
 
@@ -17,5 +19,9 @@ public interface ProductDao {
 	public void updateProduct(Product product);
 
 	public void deleteProduct(Integer productId);
+	
+	public List<Category> getCategories();
+	
+	public List<Supplier> getSuppliers();
 
 }

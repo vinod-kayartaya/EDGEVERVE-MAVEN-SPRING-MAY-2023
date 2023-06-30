@@ -4,10 +4,12 @@ import javax.sql.DataSource;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -16,6 +18,15 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages = { 
 		"com.infosys.controllers", "com.infosys.dao" })
 public class AppConfig {
+	
+	// bean for error messages source file
+	@Bean
+	public MessageSource messageSource() {
+		ReloadableResourceBundleMessageSource source = new ReloadableResourceBundleMessageSource();
+		source.setBasenames("classpath:error-messages");
+		source.setDefaultEncoding("utf-8");
+		return source;
+	}
 	
 	// configure the ViewResolver
 	@Bean
