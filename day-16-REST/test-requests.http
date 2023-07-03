@@ -1,0 +1,67 @@
+GET /api/contacts
+Host: localhost:8080
+
+###
+
+GET /api/contacts
+Host: localhost:8080
+Accept: application/json
+###
+
+
+GET /api/contacts
+Host: localhost:8080
+Accept: application/xml
+###
+
+GET /api/contacts/389cb407-4fbb-493e-b2e1-0677d1d439c3
+Host: localhost:8080
+Accept: application/json
+###
+
+
+GET /api/contacts/14512da8-a27b-4278-9c69-a112bd7268c5
+Host: localhost:8080
+Accept: application/xml
+###
+
+PATCH /api/contacts/14512da8-a27b-4278-9c69-a112bd7268c5
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{"email": "dlaugharne48@gmail.com"}
+###
+
+PUT /api/contacts/14512da8-a27b-4278-9c69-a112bd7268c5
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{"email": "dlaugharne48@gmail.com"}
+
+###
+POST /api/contacts
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{
+    "firstname": "Vinod",
+    "email": "vinod@vinod.co",
+    "phone": "9731424784"
+}
+
+###
+
+PATCH /api/contacts/389cb407-4fbb-493e-b2e1-0677d1d439c3
+Host: localhost:8080
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" ?>
+<contact>
+    <lastname>Kumar</lastname>
+    <state>Karnataka</state>
+    <country>India</country>
+</contact>
