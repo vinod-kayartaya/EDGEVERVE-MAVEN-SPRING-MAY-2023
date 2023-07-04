@@ -134,3 +134,29 @@ Content-Encoding: gzip
 
 For the complete list of codes:
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+# Steps to create a new Maven WAR project for REST application
+
+1. create a maven simple project with `war` as the project type
+1. add the required dependencies
+1. Create a class `com.infosys.config.AppConfig` as shown below:
+
+```java
+@Slf4j
+@Configuration
+@EnableWebMvc
+@ComponentScan({"com.infosys.dao", "com.infosys.controllers"})
+@PropertySource({"classpath:jdbc-info.properties"})
+public class AppConfig implements WebApplicationInitializer{
+
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		log.trace("AppConfig.onStartup() called");
+	}
+
+}
+```
+
+1. make sure that you have the following files in the `src/main/resources` folder
+   - log4j.properties
+   - jdbc-info.properties

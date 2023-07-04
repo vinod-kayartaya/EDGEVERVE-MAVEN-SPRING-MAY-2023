@@ -65,3 +65,61 @@ Content-Type: application/xml
     <state>Karnataka</state>
     <country>India</country>
 </contact>
+
+###
+
+GET /spring-rest-demo/api/shippers/12
+Host: localhost:8080
+Accept: text/plain
+
+###
+
+GET /spring-rest-demo/api/shippers/12
+Host: localhost:8080
+Accept: application/json
+
+###
+
+GET /spring-rest-demo/api/shippers/1
+Host: localhost:8080
+Accept: application/xml
+
+###
+
+GET /spring-rest-demo/api/shippers
+Host: localhost:8080
+Accept: application/json
+
+###
+
+GET /spring-rest-demo/api/shippers
+Host: localhost:8080
+Accept: application/xml
+
+###
+
+GET /spring-rest-demo/api/shippers
+Host: localhost:8080
+Accept: text/plain
+
+###
+
+POST /spring-rest-demo/api/shippers
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{"companyName": "KVinod Transports","phone": "(973) 142-4784"}
+
+###
+
+POST /spring-rest-demo/api/shippers
+Host: localhost:8080
+Accept: application/xml
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shipper>
+  <companyName>KVinod Express</companyName>
+  <phone>(984) 408-3934</phone>
+</shipper>
