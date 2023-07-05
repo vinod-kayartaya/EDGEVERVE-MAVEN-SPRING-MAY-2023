@@ -25,6 +25,8 @@
 <c:if test="${fn:length(products)!=0}">
 
 	<h5>${title}</h5>
+	
+	<p><a href="./download-report">Download PDF</a></p>
 
 	<table class="table table-striped table-bordered">
 		<thead>

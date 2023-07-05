@@ -1,6 +1,9 @@
 package com.infosys.controllers;
 
+import java.io.IOException;
 import java.util.List;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,7 +18,9 @@ import com.infosys.dao.ProductDao;
 import com.infosys.entity.Category;
 import com.infosys.entity.Product;
 import com.infosys.entity.Supplier;
+import com.infosys.utils.PdfGenerator;
 import com.infosys.validators.ProductValidator;
+import com.itextpdf.text.DocumentException;
 
 @Controller
 public class ProductController {
@@ -104,4 +109,48 @@ public class ProductController {
 		return dao.getSuppliers();
 	}
 
+	@RequestMapping("/download-report")
+    public void downloadReport(HttpServletResponse response) {
+		
+        String reportHtmlContent = "<html><body><h1>Product list</h1>"
+        		+ generateProductTable(dao.getAll())
+        		+ "</body></html>";
+
+        try {
+            byte[] pdfBytes = PdfGenerator.generatePdfReportFromHtml(reportHtmlContent);
+
+            response.setContentType("application/pdf");
+            response.setHeader("Content-Disposition", "attachment; filename=report.pdf");
+            response.setContentLength(pdfBytes.length);
+
+            response.getOutputStream().write(pdfBytes);
+            response.getOutputStream().flush();
+        } catch (DocumentException | IOException e) {
+            // Handle exceptions appropriately
+            e.printStackTrace();
+        }
+    }
+	
+	private static String generateProductTable(List<Product> products) {
+        StringBuilder htmlTable = new StringBuilder();
+
+        // Start the table and add the header row
+        htmlTable.append("<table border=\"1\">\n<tr>\n<th>Product ID</th>\n<th>Product Name</th>\n<th>Quantity Per Unit</th>\n<th>Unit Price</th>\n<th>Units In Stock</th>\n</tr>\n");
+
+        // Loop through each product and add a row for each
+        for (Product product : products) {
+            htmlTable.append("<tr>\n");
+            htmlTable.append("<td>").append(product.getProductId()).append("</td>\n");
+            htmlTable.append("<td>").append(product.getProductName()).append("</td>\n");
+            htmlTable.append("<td>").append(product.getQuantityPerUnit()).append("</td>\n");
+            htmlTable.append("<td>").append(product.getUnitPrice()).append("</td>\n");
+            htmlTable.append("<td>").append(product.getUnitsInStock()).append("</td>\n");
+            htmlTable.append("</tr>\n");
+        }
+
+        // Close the table
+        htmlTable.append("</table>");
+
+        return htmlTable.toString();
+    }
 }
