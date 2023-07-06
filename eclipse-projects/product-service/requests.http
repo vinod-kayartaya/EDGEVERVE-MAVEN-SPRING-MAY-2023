@@ -1,0 +1,26 @@
+GET /
+Host: localhost:8080
+Accept: text/plain
+
+####
+
+GET /api/products/23
+Host: localhost:8080
+Accept: application/json
+
+####
+
+GET /api/products/232
+Host: localhost:8080
+Accept: application/json
+
+####
+
+
+GET /api/products
+Host: localhost:8080
+Accept: application/json
+
+####
+
+
