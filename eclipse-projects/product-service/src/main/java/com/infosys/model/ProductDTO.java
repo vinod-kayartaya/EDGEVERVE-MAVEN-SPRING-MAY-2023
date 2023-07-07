@@ -1,8 +1,15 @@
 package com.infosys.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+//@XmlRootElement(name="product")
 public class ProductDTO {
 	private Integer productId;
 	private String productName;

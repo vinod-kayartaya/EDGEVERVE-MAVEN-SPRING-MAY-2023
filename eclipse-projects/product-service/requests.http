@@ -4,7 +4,7 @@ Accept: text/plain
 
 ####
 
-GET /api/products/23
+GET /api/products/15
 Host: localhost:8080
 Accept: application/json
 
@@ -15,12 +15,51 @@ Host: localhost:8080
 Accept: application/json
 
 ####
-
-
 GET /api/products
 Host: localhost:8080
 Accept: application/json
-
 ####
-
-
+GET /api/products?_page=2
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products?_page=3&_limit=15
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products?_limit=5
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/search?fieldName=unitPrice&fieldValue=14
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/search?fieldName=unitsInStock&fieldValue=20
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/search?fieldName=discontinued&fieldValue=1
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/search?fieldName=unitsOnOrder&fieldValue=10
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/search?fieldName=reorderLevel&fieldValue=0
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/search?fieldName=quantityPerUnit&fieldValue=jars
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/search?fieldName=productName&fieldValue=che
+Host: localhost:8080
+Accept: application/json
+####
+GET /api/products/by-price-range?min=100&max=500
+Host: localhost:8080
+Accept: application/json
+####
