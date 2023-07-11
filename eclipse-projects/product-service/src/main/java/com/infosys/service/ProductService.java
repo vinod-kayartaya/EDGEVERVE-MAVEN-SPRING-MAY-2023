@@ -4,10 +4,14 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
 
 import com.infosys.entity.Product;
+import com.infosys.model.CategoryDTO;
 import com.infosys.model.ProductDTO;
 import com.infosys.repositories.ProductRepository;
 
@@ -16,12 +20,35 @@ public class ProductService {
 
 	@Autowired
 	private ProductRepository repo;
+	
+	@Value("${category.service.url}")
+	private String categoryServiceUrl;
 
-	private static ProductDTO getProductDTO(Product product) {
-		return ProductDTO.builder().productId(product.getProductId()).productName(product.getProductName())
-				.quantityPerUnit(product.getQuantityPerUnit()).unitPrice(product.getUnitPrice())
-				.unitsInStock(product.getUnitsInStock()).unitsOnOrder(product.getUnitsOnOrder())
-				.reorderLevel(product.getReorderLevel()).discontinued(product.getDiscontinued()).build();
+	private ProductDTO getProductDTO(Product product) {
+		ProductDTO p1 = ProductDTO.builder()
+				.productId(product.getProductId())
+				.productName(product.getProductName())
+				.quantityPerUnit(product.getQuantityPerUnit())
+				.unitPrice(product.getUnitPrice())
+				.unitsInStock(product.getUnitsInStock())
+				.unitsOnOrder(product.getUnitsOnOrder())
+				.reorderLevel(product.getReorderLevel())
+				.discontinued(product.getDiscontinued()).build();
+		
+		
+		// we need to go and get the category data from the category-service
+		// and set that to the p1.category
+		
+		RestTemplate template = new RestTemplate();
+		
+		try {
+			CategoryDTO c1 = template.getForObject(categoryServiceUrl+ product.getCategoryId(), CategoryDTO.class);
+			p1.setCategory(c1);
+		} catch (RestClientException e) {
+			e.printStackTrace();
+		}
+		
+		return p1;
 	}
 
 	public ProductDTO getProductById(Integer productId) {
@@ -39,7 +66,7 @@ public class ProductService {
 
 		return repo.findAll(pr) // Page<Product>
 				.stream() // Stream<Product>
-				.map(ProductService::getProductDTO) // Stream<ProductDTO>
+				.map(this::getProductDTO) // Stream<ProductDTO>
 				.toList(); // List<ProductDTO>
 	}
 
@@ -70,12 +97,12 @@ public class ProductService {
 			break;
 		}
 
-		return list.stream().map(ProductService::getProductDTO).toList();
+		return list.stream().map(this::getProductDTO).toList();
 	}
 
 	public List<ProductDTO> getByPriceRange(Double min, Double max) {
 		List<Product> list = repo.findAllByUnitPriceBetween(min, max);
-		return list.stream().map(ProductService::getProductDTO).toList();
+		return list.stream().map(this::getProductDTO).toList();
 	}
 }
 

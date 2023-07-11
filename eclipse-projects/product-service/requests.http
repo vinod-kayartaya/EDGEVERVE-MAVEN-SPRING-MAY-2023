@@ -4,13 +4,18 @@ Accept: text/plain
 
 ####
 
+GET /api/categories/2
+Host: localhost:2345
+Accept: application/json
+
+###
 GET /api/products/15
 Host: localhost:8080
 Accept: application/json
 
 ####
 
-GET /api/products/232
+GET /api/products/23
 Host: localhost:8080
 Accept: application/json
 

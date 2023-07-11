@@ -1,0 +1,27 @@
+PUT /api/categories/9
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{
+    "categoryName": "Stationaries",
+    "description": "books, pens, pencil, paper etc."
+}
+
+###
+PATCH /api/categories/9
+Host: localhost:8080
+Accept: application/json
+Content-Type: application/json
+
+{
+    "categoryName": ""
+}
+
+###
+
+GET /api/categories/1/picture
+Host: localhost:8080
+Accept: image/jpeg
+
+###

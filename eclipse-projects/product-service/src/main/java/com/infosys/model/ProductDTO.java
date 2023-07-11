@@ -13,6 +13,9 @@ import lombok.NoArgsConstructor;
 public class ProductDTO {
 	private Integer productId;
 	private String productName;
+	
+	private CategoryDTO category;
+	
 	private String quantityPerUnit;
 	private Double unitPrice;
 	private Integer unitsInStock;
