@@ -7,15 +7,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import com.infosys.entity.Product;
 import com.infosys.model.CategoryDTO;
 import com.infosys.model.ProductDTO;
+import com.infosys.model.SupplierDTO;
 import com.infosys.repositories.ProductRepository;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class ProductService {
 
 	@Autowired
@@ -23,6 +27,9 @@ public class ProductService {
 	
 	@Value("${category.service.url}")
 	private String categoryServiceUrl;
+	
+	@Value("${supplier.service.url}")
+	private String supplierServiceUrl;
 
 	private ProductDTO getProductDTO(Product product) {
 		ProductDTO p1 = ProductDTO.builder()
@@ -38,14 +45,27 @@ public class ProductService {
 		
 		// we need to go and get the category data from the category-service
 		// and set that to the p1.category
-		
-		RestTemplate template = new RestTemplate();
-		
 		try {
+			RestTemplate template = new RestTemplate();
 			CategoryDTO c1 = template.getForObject(categoryServiceUrl+ product.getCategoryId(), CategoryDTO.class);
 			p1.setCategory(c1);
-		} catch (RestClientException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+			log.warn("error", e);
+		}
+		
+		// get the supplier information based on product.supplierId
+		try {
+			
+			SupplierDTO s1 = WebClient.create(supplierServiceUrl+product.getSupplierId())
+				.get()
+				.retrieve()
+				.bodyToMono(SupplierDTO.class)
+				.block();
+
+			p1.setSupplier(s1);
+		}
+		catch(Exception e) {
+			log.warn("error", e);
 		}
 		
 		return p1;

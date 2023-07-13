@@ -15,6 +15,7 @@ public class ProductDTO {
 	private String productName;
 	
 	private CategoryDTO category;
+	private SupplierDTO supplier;
 	
 	private String quantityPerUnit;
 	private Double unitPrice;
