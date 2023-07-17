@@ -1,0 +1,1056 @@
+2023-07-17T11:04:05.452+05:30  INFO 5240 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5240 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T11:04:05.453+05:30  INFO 5240 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T11:04:05.672+05:30  INFO 5240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T11:04:05.680+05:30  INFO 5240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-07-17T11:04:05.762+05:30  INFO 5240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T11:04:05.763+05:30  INFO 5240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T11:04:05.763+05:30  INFO 5240 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T11:04:05.775+05:30  INFO 5240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T11:04:05.775+05:30  INFO 5240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 320 ms
+2023-07-17T11:04:05.802+05:30  INFO 5240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-07-17T11:04:05.820+05:30  INFO 5240 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T11:04:05.820+05:30  INFO 5240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-07-17T11:04:05.821+05:30  INFO 5240 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T11:04:05.852+05:30  INFO 5240 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T11:04:05.858+05:30  INFO 5240 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:04:05.859+05:30  INFO 5240 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T11:04:05.866+05:30  INFO 5240 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:04:05.886+05:30  INFO 5240 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T11:04:05.886+05:30  INFO 5240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:04:05.942+05:30  WARN 5240 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T11:04:06.047+05:30  INFO 5240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T11:04:06.055+05:30  INFO 5240 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-17T11:04:06.087+05:30  INFO 5240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T11:04:06.098+05:30  INFO 5240 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 0.695 seconds (process running for 383.169)
+2023-07-17T11:04:06.115+05:30  INFO 5240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-17T11:04:23.421+05:30  INFO 5240 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:04:23.422+05:30  INFO 5240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-07-17T11:04:23.427+05:30  INFO 5240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-07-17T11:04:28.918+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5310 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T11:04:28.921+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T11:04:28.970+05:30  INFO 5310 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T11:04:28.989+05:30  INFO 5310 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T11:04:29.721+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T11:04:29.769+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2023-07-17T11:04:30.391+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T11:04:30.411+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T11:04:30.421+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T11:04:30.491+05:30  INFO 5310 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T11:04:30.492+05:30  INFO 5310 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1503 ms
+2023-07-17T11:04:30.583+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T11:04:30.679+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T11:04:30.681+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T11:04:30.694+05:30  INFO 5310 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T11:04:30.843+05:30  INFO 5310 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T11:04:30.884+05:30  INFO 5310 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T11:04:30.886+05:30  INFO 5310 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T11:04:30.999+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:04:31.112+05:30  INFO 5310 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T11:04:31.281+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:04:31.701+05:30  INFO 5310 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T11:04:31.703+05:30  INFO 5310 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:04:31.947+05:30  WARN 5310 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T11:04:32.364+05:30  INFO 5310 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T11:04:32.371+05:30  INFO 5310 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-17T11:04:32.447+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T11:04:32.463+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 3.891 seconds (process running for 4.291)
+2023-07-17T11:05:23.382+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T11:05:23.383+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T11:05:23.385+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T11:06:57.883+05:30  INFO 5310 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-17T11:06:57.893+05:30  INFO 5310 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T11:06:57.894+05:30  INFO 5310 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T11:06:57.900+05:30  INFO 5310 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:06:57.904+05:30  INFO 5310 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T11:06:57.912+05:30  INFO 5310 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T11:06:58.036+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5310 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T11:06:58.048+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T11:06:58.318+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T11:06:58.327+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-07-17T11:06:58.416+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T11:06:58.416+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T11:06:58.417+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T11:06:58.432+05:30  INFO 5310 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T11:06:58.432+05:30  INFO 5310 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 380 ms
+2023-07-17T11:06:58.459+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-07-17T11:06:58.469+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T11:06:58.469+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-07-17T11:06:58.469+05:30  INFO 5310 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T11:06:58.502+05:30  INFO 5310 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T11:06:58.508+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:06:58.509+05:30  INFO 5310 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T11:06:58.518+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:06:58.540+05:30  INFO 5310 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T11:06:58.540+05:30  INFO 5310 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:06:58.602+05:30  WARN 5310 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T11:06:58.720+05:30  INFO 5310 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T11:06:58.724+05:30  INFO 5310 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2023-07-17T11:06:58.739+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T11:06:58.747+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 0.76 seconds (process running for 150.576)
+2023-07-17T11:06:58.751+05:30  INFO 5310 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   InfoEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration#infoEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.info.InfoEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LogFileWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name logs/app-logs.txt (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-07-17T11:07:14.087+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T11:07:14.100+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T11:07:14.101+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T11:07:37.422+05:30  INFO 5310 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-17T11:07:37.426+05:30  INFO 5310 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T11:07:37.426+05:30  INFO 5310 --- [Thread-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T11:07:37.429+05:30  INFO 5310 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:07:37.430+05:30  INFO 5310 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-07-17T11:07:37.435+05:30  INFO 5310 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-07-17T11:07:37.505+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5310 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T11:07:37.505+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T11:07:37.758+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T11:07:37.767+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2023-07-17T11:07:37.842+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T11:07:37.843+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T11:07:37.844+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T11:07:37.857+05:30  INFO 5310 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T11:07:37.857+05:30  INFO 5310 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 350 ms
+2023-07-17T11:07:37.882+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-07-17T11:07:37.892+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T11:07:37.904+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-07-17T11:07:37.905+05:30  INFO 5310 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T11:07:37.942+05:30  INFO 5310 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T11:07:37.951+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:07:37.965+05:30  INFO 5310 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T11:07:37.972+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:07:38.002+05:30  INFO 5310 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T11:07:38.005+05:30  INFO 5310 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:07:38.063+05:30  WARN 5310 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T11:07:38.186+05:30  INFO 5310 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T11:07:38.189+05:30  INFO 5310 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T11:07:38.204+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T11:07:38.211+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 0.723 seconds (process running for 190.04)
+2023-07-17T11:07:38.214+05:30  INFO 5310 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration#beansEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.beans.BeansEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration#conditionsReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpoint; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HeapDumpWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HeapDumpWebEndpointAutoConfiguration#heapDumpWebEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.HeapDumpWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpExchangesEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration#loggersEndpoint matched:
+      - Logging System enabled (LoggersEndpointAutoConfiguration.OnEnabledLoggingSystemCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.logging.LoggingSystem; SearchStrategy: all) found bean 'springBootLoggingSystem'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LoggersEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration.SpringMvcConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   MetricsEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration#metricsEndpoint matched:
+      - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.MetricsEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ScheduledTasksEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration#scheduledTasksEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.scheduling.ScheduledTasksEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThreadDumpEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ThreadDumpEndpointAutoConfiguration#dumpEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.ThreadDumpEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration#auditEventsEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.audit.AuditEventRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.audit.AuditEventRepository (OnBeanCondition)
+
+   HttpExchangesEndpointAutoConfiguration#httpExchangesEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration.ReactiveWebConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-07-17T11:07:42.222+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T11:07:42.222+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T11:07:42.223+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T11:08:57.192+05:30  INFO 5310 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-17T11:08:57.195+05:30  INFO 5310 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T11:08:57.195+05:30  INFO 5310 --- [Thread-11] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T11:08:57.198+05:30  INFO 5310 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:08:57.198+05:30  INFO 5310 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-07-17T11:08:57.204+05:30  INFO 5310 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-07-17T11:08:57.277+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5310 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T11:08:57.278+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T11:08:57.498+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T11:08:57.506+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-07-17T11:08:57.587+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T11:08:57.588+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T11:08:57.588+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T11:08:57.601+05:30  INFO 5310 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T11:08:57.602+05:30  INFO 5310 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 323 ms
+2023-07-17T11:08:57.627+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-07-17T11:08:57.637+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T11:08:57.638+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-07-17T11:08:57.638+05:30  INFO 5310 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T11:08:57.672+05:30  INFO 5310 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T11:08:57.677+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:08:57.677+05:30  INFO 5310 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T11:08:57.685+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:08:57.706+05:30  INFO 5310 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T11:08:57.707+05:30  INFO 5310 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:08:57.774+05:30  WARN 5310 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T11:08:57.890+05:30  INFO 5310 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T11:08:57.893+05:30  INFO 5310 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T11:08:57.912+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T11:08:57.926+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 0.666 seconds (process running for 269.765)
+2023-07-17T11:08:57.940+05:30  INFO 5310 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-17T11:09:03.706+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T11:09:03.707+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T11:09:03.708+05:30  INFO 5310 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T11:54:58.933+05:30  INFO 5310 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-07-17T11:54:58.936+05:30  INFO 5310 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T11:54:58.953+05:30  INFO 5310 --- [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T11:54:58.955+05:30  INFO 5310 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:54:58.974+05:30  INFO 5310 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-07-17T11:54:58.980+05:30  INFO 5310 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-07-17T11:54:59.060+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5310 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T11:54:59.078+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T11:54:59.258+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T11:54:59.263+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-07-17T11:54:59.319+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T11:54:59.319+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T11:54:59.319+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T11:54:59.330+05:30  INFO 5310 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T11:54:59.330+05:30  INFO 5310 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 251 ms
+2023-07-17T11:54:59.350+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-07-17T11:54:59.364+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn50: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T11:54:59.364+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-07-17T11:54:59.364+05:30  INFO 5310 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T11:54:59.387+05:30  INFO 5310 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T11:54:59.391+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:54:59.391+05:30  INFO 5310 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T11:54:59.397+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T11:54:59.411+05:30  INFO 5310 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T11:54:59.411+05:30  INFO 5310 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:54:59.454+05:30  WARN 5310 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T11:54:59.543+05:30  INFO 5310 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T11:54:59.545+05:30  INFO 5310 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T11:54:59.559+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T11:54:59.565+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 0.529 seconds (process running for 3031.41)
+2023-07-17T11:54:59.567+05:30  INFO 5310 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-17T11:55:20.129+05:30  INFO 5310 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 4 deletions, 8 modifications)
+2023-07-17T11:55:20.133+05:30  INFO 5310 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T11:55:20.135+05:30  INFO 5310 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T11:55:20.136+05:30  INFO 5310 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-07-17T11:55:20.141+05:30  INFO 5310 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-07-17T12:03:34.088+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5310 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T12:03:34.088+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T12:03:34.235+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T12:03:34.240+05:30  INFO 5310 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2023-07-17T12:03:34.297+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T12:03:34.298+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T12:03:34.298+05:30  INFO 5310 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T12:03:34.307+05:30  INFO 5310 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T12:03:34.307+05:30  INFO 5310 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 217 ms
+2023-07-17T12:03:34.323+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-07-17T12:03:34.335+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn70: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T12:03:34.335+05:30  INFO 5310 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-07-17T12:03:34.335+05:30  INFO 5310 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T12:03:34.355+05:30  INFO 5310 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T12:03:34.358+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:03:34.358+05:30  INFO 5310 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T12:03:34.364+05:30  INFO 5310 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:03:34.376+05:30  INFO 5310 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T12:03:34.376+05:30  INFO 5310 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:03:34.415+05:30  WARN 5310 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T12:03:34.489+05:30  INFO 5310 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T12:03:34.490+05:30  INFO 5310 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T12:03:34.501+05:30  INFO 5310 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T12:03:34.505+05:30  INFO 5310 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 0.431 seconds (process running for 3546.346)
+2023-07-17T12:03:34.506+05:30  INFO 5310 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration#beansEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.beans.BeansEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration#conditionsReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpoint; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HeapDumpWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HeapDumpWebEndpointAutoConfiguration#heapDumpWebEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.HeapDumpWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpExchangesEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration#infoEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.info.InfoEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LogFileWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name logs/app-logs.txt (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LoggersEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration#loggersEndpoint matched:
+      - Logging System enabled (LoggersEndpointAutoConfiguration.OnEnabledLoggingSystemCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.logging.LoggingSystem; SearchStrategy: all) found bean 'springBootLoggingSystem'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LoggersEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration.SpringMvcConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   MetricsEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration#metricsEndpoint matched:
+      - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.MetricsEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ScheduledTasksEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration#scheduledTasksEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.scheduling.ScheduledTasksEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThreadDumpEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ThreadDumpEndpointAutoConfiguration#dumpEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.ThreadDumpEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration#auditEventsEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.audit.AuditEventRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.audit.AuditEventRepository (OnBeanCondition)
+
+   HttpExchangesEndpointAutoConfiguration#httpExchangesEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration.ReactiveWebConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-07-17T12:03:58.576+05:30  INFO 5310 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:03:58.577+05:30  INFO 5310 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-07-17T12:03:58.581+05:30  INFO 5310 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-07-17T12:04:05.528+05:30  INFO 5940 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5940 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T12:04:05.530+05:30  INFO 5940 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T12:04:05.573+05:30  INFO 5940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T12:04:05.573+05:30  INFO 5940 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T12:04:06.428+05:30  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T12:04:06.479+05:30  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2023-07-17T12:04:07.041+05:30  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17T12:04:07.053+05:30  INFO 5940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T12:04:07.053+05:30  INFO 5940 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T12:04:07.122+05:30  INFO 5940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T12:04:07.123+05:30  INFO 5940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1548 ms
+2023-07-17T12:04:07.213+05:30  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T12:04:07.300+05:30  INFO 5940 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T12:04:07.302+05:30  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T12:04:07.312+05:30  INFO 5940 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T12:04:07.455+05:30  INFO 5940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T12:04:07.499+05:30  INFO 5940 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T12:04:07.501+05:30  INFO 5940 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T12:04:07.618+05:30  INFO 5940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:04:07.727+05:30  INFO 5940 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T12:04:07.906+05:30  INFO 5940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:04:08.390+05:30  INFO 5940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T12:04:08.408+05:30  INFO 5940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:04:08.664+05:30  WARN 5940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T12:04:09.132+05:30  INFO 5940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T12:04:09.155+05:30  INFO 5940 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T12:04:09.249+05:30  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17T12:04:09.267+05:30  INFO 5940 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 4.042 seconds (process running for 4.468)
+2023-07-17T12:04:09.764+05:30  INFO 5940 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as a973ff14be49
+2023-07-17T12:04:09.801+05:30  INFO 5940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T12:04:09.802+05:30  INFO 5940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T12:04:09.803+05:30  INFO 5940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T12:07:10.081+05:30  WARN 5940 --- [http-nio-8080-exec-7] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.zaxxer.hikari.pool.HikariPool
+2023-07-17T12:08:55.927+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-07-17T12:08:55.928+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : begin
+2023-07-17T12:08:56.000+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [StandardTableGroup(com.infosys.entity.Shipper(51460058202928))] with identifierForTableGroup [com.infosys.entity.Shipper] for NavigablePath [com.infosys.entity.Shipper] 
+2023-07-17T12:08:56.016+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2023-07-17T12:08:56.024+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Initializer list
+2023-07-17T12:08:56.024+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                :     com.infosys.entity.Shipper(51460058202928) -> EntityResultInitializer(com.infosys.entity.Shipper(51460058202928))@401196127 (SingleTableEntityPersister(com.infosys.entity.Shipper))
+2023-07-17T12:08:56.028+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select s1_0.shipper_id,s1_0.company_name,s1_0.phone from shippers s1_0
+2023-07-17T12:08:56.041+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [1]
+2023-07-17T12:08:56.041+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 1
+2023-07-17T12:08:56.043+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#1] : 1099699528
+2023-07-17T12:08:56.043+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [Speedy Express]
+2023-07-17T12:08:56.043+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(503) 555-9831]
+2023-07-17T12:08:56.046+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#1
+2023-07-17T12:08:56.046+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.047+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [2]
+2023-07-17T12:08:56.047+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 2
+2023-07-17T12:08:56.047+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#2] : 1440763620
+2023-07-17T12:08:56.047+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [United Package]
+2023-07-17T12:08:56.047+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(503) 555-3199]
+2023-07-17T12:08:56.047+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#2
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [3]
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 3
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#3] : 516753942
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [Federal Shipping]
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(503) 555-9931]
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#3
+2023-07-17T12:08:56.048+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [4]
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 4
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#4] : 1923225952
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [KVinod Transports]
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(973) 142-4784]
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#4
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [5]
+2023-07-17T12:08:56.049+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 5
+2023-07-17T12:08:56.050+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#5] : 41503688
+2023-07-17T12:08:56.050+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [KVinod Express]
+2023-07-17T12:08:56.050+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(984) 408-3934]
+2023-07-17T12:08:56.050+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#5
+2023-07-17T12:08:56.050+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.050+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [6]
+2023-07-17T12:08:56.050+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 6
+2023-07-17T12:08:56.051+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#6] : 1429840397
+2023-07-17T12:08:56.051+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [ABCD Transports]
+2023-07-17T12:08:56.051+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(908) 931-3974]
+2023-07-17T12:08:56.051+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#6
+2023-07-17T12:08:56.051+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.051+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [7]
+2023-07-17T12:08:56.051+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 7
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#7] : 601001734
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [A New Transports]
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [null]
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#7
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [8]
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 8
+2023-07-17T12:08:56.052+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#8] : 1104804613
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [ACME Express Ltd]
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(987) 831-3382]
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#8
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [0] - [9]
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51460058202928)): 9
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51460058202928)#9] : 162979837
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [1] - [ACME Express Ltd]
+2023-07-17T12:08:56.053+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results                : Extracted JDBC value [2] - [(987) 831-3382]
+2023-07-17T12:08:56.054+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51460058202928)#9
+2023-07-17T12:08:56.054+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@43a108f6
+2023-07-17T12:08:56.060+05:30 DEBUG 5940 --- [http-nio-8080-exec-10] o.h.e.t.internal.TransactionImpl         : committing
+2023-07-17T12:10:39.854+05:30 TRACE 5940 --- [http-nio-8080-exec-2] .i.SessionFactoryImpl$SessionBuilderImpl : Opening Hibernate Session.  tenant=null
+2023-07-17T12:10:39.855+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.internal.SessionImpl       : Opened Session [e7327db9-2a97-47f6-a2b6-4d89502afb4a] at timestamp: 1689576039855
+2023-07-17T12:10:39.856+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-07-17T12:10:39.856+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : begin
+2023-07-17T12:10:39.856+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+2023-07-17T12:10:39.856+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : Transaction begun via JDBC Connection.setAutoCommit(false)
+2023-07-17T12:10:39.857+05:30 TRACE 5940 --- [http-nio-8080-exec-2] cResourceLocalTransactionCoordinatorImpl : ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+2023-07-17T12:10:39.857+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Resolving SqmRoot [com.infosys.entity.Shipper] to TableGroup
+2023-07-17T12:10:39.857+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Resolving SqmRoot [com.infosys.entity.Shipper] to TableGroup
+2023-07-17T12:10:39.858+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Resolved SqmRoot [com.infosys.entity.Shipper] to new TableGroup [StandardTableGroup(com.infosys.entity.Shipper(51563960878130))]
+2023-07-17T12:10:39.858+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.sql.ast.create         : Registration of TableGroup [StandardTableGroup(com.infosys.entity.Shipper(51563960878130))] with identifierForTableGroup [com.infosys.entity.Shipper] for NavigablePath [com.infosys.entity.Shipper] 
+2023-07-17T12:10:39.858+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : Visiting explicit joins for `com.infosys.entity.Shipper(51563960878130)`
+2023-07-17T12:10:39.858+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.q.sqm.sql.BaseSqmToSqlAstConverter   : SqmRoot [com.infosys.entity.Shipper] resolved to existing TableGroup [StandardTableGroup(com.infosys.entity.Shipper(51563960878130))]
+2023-07-17T12:10:39.859+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.sql.exec               : Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2023-07-17T12:10:39.859+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Registering initializer : EntityResultInitializer(com.infosys.entity.Shipper(51563960878130))
+2023-07-17T12:10:39.859+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Initializer list
+2023-07-17T12:10:39.859+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                :     com.infosys.entity.Shipper(51563960878130) -> EntityResultInitializer(com.infosys.entity.Shipper(51563960878130))@1372149575 (SingleTableEntityPersister(com.infosys.entity.Shipper))
+2023-07-17T12:10:39.859+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.s.r.j.i.DeferredResultSetAccess      : Executing query to retrieve ResultSet : select s1_0.shipper_id,s1_0.company_name,s1_0.phone from shippers s1_0
+2023-07-17T12:10:39.859+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select s1_0.shipper_id,s1_0.company_name,s1_0.phone from shippers s1_0
+2023-07-17T12:10:39.861+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Registering statement [HikariProxyPreparedStatement@392039302 wrapping prep9: select s1_0.shipper_id,s1_0.company_name,s1_0.phone from shippers s1_0]
+2023-07-17T12:10:39.862+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Registering result set [HikariProxyResultSet@1295911247 wrapping rs9: columns: 3 rows: 9 pos: -1]
+2023-07-17T12:10:39.862+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : LogicalConnection#afterStatement
+2023-07-17T12:10:39.862+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.863+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [1]
+2023-07-17T12:10:39.863+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 1
+2023-07-17T12:10:39.863+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#1] : 682034363
+2023-07-17T12:10:39.863+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [Speedy Express]
+2023-07-17T12:10:39.863+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(503) 555-9831]
+2023-07-17T12:10:39.863+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#1
+2023-07-17T12:10:39.863+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.863+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.864+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.864+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [2]
+2023-07-17T12:10:39.864+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 2
+2023-07-17T12:10:39.864+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#2] : 1808034481
+2023-07-17T12:10:39.864+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [United Package]
+2023-07-17T12:10:39.864+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(503) 555-3199]
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#2
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.865+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.865+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [3]
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 3
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#3] : 1452110583
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [Federal Shipping]
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(503) 555-9931]
+2023-07-17T12:10:39.865+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#3
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.866+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.866+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [4]
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 4
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#4] : 1184839233
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [KVinod Transports]
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(973) 142-4784]
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#4
+2023-07-17T12:10:39.866+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.866+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.867+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.867+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [5]
+2023-07-17T12:10:39.867+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 5
+2023-07-17T12:10:39.867+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#5] : 1211491335
+2023-07-17T12:10:39.867+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [KVinod Express]
+2023-07-17T12:10:39.867+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(984) 408-3934]
+2023-07-17T12:10:39.867+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#5
+2023-07-17T12:10:39.867+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.867+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.867+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.868+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [6]
+2023-07-17T12:10:39.868+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 6
+2023-07-17T12:10:39.868+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#6] : 7118418
+2023-07-17T12:10:39.868+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [ABCD Transports]
+2023-07-17T12:10:39.868+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(908) 931-3974]
+2023-07-17T12:10:39.868+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#6
+2023-07-17T12:10:39.868+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.868+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.869+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.869+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [7]
+2023-07-17T12:10:39.869+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 7
+2023-07-17T12:10:39.869+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#7] : 1036738146
+2023-07-17T12:10:39.869+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [A New Transports]
+2023-07-17T12:10:39.869+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [null]
+2023-07-17T12:10:39.869+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#7
+2023-07-17T12:10:39.869+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.869+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.869+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [8]
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 8
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#8] : 39406244
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [ACME Express Ltd]
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(987) 831-3382]
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#8
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.870+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.870+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#readRow
+2023-07-17T12:10:39.870+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [0] - [9]
+2023-07-17T12:10:39.871+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Hydrated EntityKey (com.infosys.entity.Shipper(51563960878130)): 9
+2023-07-17T12:10:39.871+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Created new entity instance [com.infosys.entity.Shipper(51563960878130)#9] : 1705743156
+2023-07-17T12:10:39.871+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [1] - [ACME Express Ltd]
+2023-07-17T12:10:39.871+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results                : Extracted JDBC value [2] - [(987) 831-3382]
+2023-07-17T12:10:39.871+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.hibernate.orm.results.loading.entity   : (EntityResultInitializer) Done materializing entityInstance : com.infosys.entity.Shipper(51563960878130)#9
+2023-07-17T12:10:39.871+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@179326eb
+2023-07-17T12:10:39.871+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.orm.results.loading        : StandardRowReader#afterRow
+2023-07-17T12:10:39.871+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Releasing result set [HikariProxyResultSet@1295911247 wrapping rs9: columns: 3 rows: 9 pos: 9]
+2023-07-17T12:10:39.871+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Closing result set [HikariProxyResultSet@1295911247 wrapping rs9: columns: 3 rows: 9 pos: 9]
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Releasing statement [HikariProxyPreparedStatement@392039302 wrapping prep9: select s1_0.shipper_id,s1_0.company_name,s1_0.phone from shippers s1_0]
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Closing prepared statement [HikariProxyPreparedStatement@392039302 wrapping prep9: select s1_0.shipper_id,s1_0.company_name,s1_0.phone from shippers s1_0]
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.e.i.StatefulPersistenceContext       : Initializing non-lazy collections
+2023-07-17T12:10:39.872+05:30 DEBUG 5940 --- [http-nio-8080-exec-2] o.h.e.t.internal.TransactionImpl         : committing
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] cResourceLocalTransactionCoordinatorImpl : ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.internal.SessionImpl       : SessionImpl#beforeTransactionCompletion()
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : LogicalConnection#beforeTransactionCompletion
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] .t.i.SynchronizationRegistryStandardImpl : SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+2023-07-17T12:10:39.872+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : Preparing to commit transaction via JDBC Connection.commit()
+2023-07-17T12:10:39.873+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : Transaction committed via JDBC Connection.commit()
+2023-07-17T12:10:39.873+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : re-enabling auto-commit on JDBC Connection after completion of JDBC-based transaction
+2023-07-17T12:10:39.873+05:30 TRACE 5940 --- [http-nio-8080-exec-2] j.i.AbstractLogicalConnectionImplementor : LogicalConnection#afterTransaction
+2023-07-17T12:10:39.873+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Releasing JDBC resources
+2023-07-17T12:10:39.873+05:30 TRACE 5940 --- [http-nio-8080-exec-2] cResourceLocalTransactionCoordinatorImpl : ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+2023-07-17T12:10:39.873+05:30 TRACE 5940 --- [http-nio-8080-exec-2] .t.i.SynchronizationRegistryStandardImpl : SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+2023-07-17T12:10:39.873+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.internal.SessionImpl       : SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+2023-07-17T12:10:39.874+05:30 TRACE 5940 --- [http-nio-8080-exec-2] org.hibernate.internal.SessionImpl       : Closing session [e7327db9-2a97-47f6-a2b6-4d89502afb4a]
+2023-07-17T12:10:39.874+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.e.jdbc.internal.JdbcCoordinatorImpl  : Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@668e69cb]
+2023-07-17T12:10:39.874+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Releasing JDBC resources
+2023-07-17T12:10:39.874+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.LogicalConnectionManagedImpl   : Closing logical connection
+2023-07-17T12:10:39.874+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.ResourceRegistryStandardImpl   : Releasing JDBC resources
+2023-07-17T12:10:39.875+05:30 TRACE 5940 --- [http-nio-8080-exec-2] o.h.r.j.i.LogicalConnectionManagedImpl   : Logical connection closed
+2023-07-17T12:14:06.083+05:30  INFO 5940 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-17T12:14:06.092+05:30  INFO 5940 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T12:14:06.094+05:30  INFO 5940 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T12:14:06.100+05:30  INFO 5940 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:14:06.103+05:30  INFO 5940 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T12:14:06.108+05:30  INFO 5940 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T12:14:06.209+05:30  INFO 5940 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 5940 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T12:14:06.209+05:30  INFO 5940 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T12:14:06.446+05:30  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T12:14:06.452+05:30  INFO 5940 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-07-17T12:14:06.513+05:30  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T12:14:06.514+05:30  INFO 5940 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T12:14:06.514+05:30  INFO 5940 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T12:14:06.524+05:30  INFO 5940 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T12:14:06.524+05:30  INFO 5940 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 313 ms
+2023-07-17T12:14:06.544+05:30  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-07-17T12:14:06.553+05:30  INFO 5940 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T12:14:06.554+05:30  INFO 5940 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-07-17T12:14:06.554+05:30  INFO 5940 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T12:14:06.578+05:30  INFO 5940 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T12:14:06.581+05:30  INFO 5940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:06.582+05:30  INFO 5940 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T12:14:06.587+05:30  INFO 5940 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:06.605+05:30  INFO 5940 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T12:14:06.606+05:30  INFO 5940 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:14:06.664+05:30  WARN 5940 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T12:14:06.803+05:30  INFO 5940 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T12:14:06.806+05:30  INFO 5940 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T12:14:06.822+05:30  INFO 5940 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61341 (http) with context path ''
+2023-07-17T12:14:06.829+05:30  INFO 5940 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 0.645 seconds (process running for 602.027)
+2023-07-17T12:14:06.842+05:30  INFO 5940 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 08a59302276a
+2023-07-17T12:14:06.842+05:30  INFO 5940 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T12:14:06.842+05:30  INFO 5940 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T12:14:06.843+05:30  INFO 5940 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T12:14:08.190+05:30  INFO 5940 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:14:08.206+05:30  INFO 5940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-07-17T12:14:08.211+05:30  INFO 5940 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-07-17T12:14:18.926+05:30  INFO 6073 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 6073 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T12:14:18.941+05:30  INFO 6073 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T12:14:18.992+05:30  INFO 6073 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T12:14:19.006+05:30  INFO 6073 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T12:14:19.778+05:30  INFO 6073 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T12:14:19.828+05:30  INFO 6073 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interfaces.
+2023-07-17T12:14:20.438+05:30  INFO 6073 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T12:14:20.448+05:30  INFO 6073 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T12:14:20.448+05:30  INFO 6073 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T12:14:20.506+05:30  INFO 6073 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T12:14:20.507+05:30  INFO 6073 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1499 ms
+2023-07-17T12:14:20.593+05:30  INFO 6073 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T12:14:20.682+05:30  INFO 6073 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T12:14:20.696+05:30  INFO 6073 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T12:14:20.707+05:30  INFO 6073 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T12:14:20.849+05:30  INFO 6073 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T12:14:20.895+05:30  INFO 6073 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T12:14:20.897+05:30  INFO 6073 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T12:14:21.009+05:30  INFO 6073 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:21.107+05:30  INFO 6073 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T12:14:21.274+05:30  INFO 6073 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:21.707+05:30  INFO 6073 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T12:14:21.709+05:30  INFO 6073 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:14:21.940+05:30  WARN 6073 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T12:14:22.356+05:30  INFO 6073 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T12:14:22.363+05:30  INFO 6073 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T12:14:22.434+05:30  INFO 6073 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61358 (http) with context path ''
+2023-07-17T12:14:22.450+05:30  INFO 6073 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 3.884 seconds (process running for 4.333)
+2023-07-17T12:14:22.588+05:30  INFO 6073 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 0ce64e5fbbda
+2023-07-17T12:14:22.620+05:30  INFO 6073 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T12:14:22.620+05:30  INFO 6073 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T12:14:22.622+05:30  INFO 6073 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-17T12:14:27.463+05:30  INFO 6075 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 6075 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T12:14:27.465+05:30  INFO 6075 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T12:14:27.509+05:30  INFO 6075 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T12:14:27.509+05:30  INFO 6075 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T12:14:28.257+05:30  INFO 6075 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T12:14:28.303+05:30  INFO 6075 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2023-07-17T12:14:28.824+05:30  INFO 6075 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T12:14:28.836+05:30  INFO 6075 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T12:14:28.845+05:30  INFO 6075 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T12:14:28.916+05:30  INFO 6075 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T12:14:28.916+05:30  INFO 6075 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1406 ms
+2023-07-17T12:14:28.998+05:30  INFO 6075 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T12:14:29.081+05:30  INFO 6075 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T12:14:29.086+05:30  INFO 6075 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T12:14:29.113+05:30  INFO 6075 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T12:14:29.264+05:30  INFO 6075 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T12:14:29.322+05:30  INFO 6075 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T12:14:29.324+05:30  INFO 6075 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T12:14:29.449+05:30  INFO 6075 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:29.547+05:30  INFO 6075 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T12:14:29.715+05:30  INFO 6075 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:30.149+05:30  INFO 6075 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T12:14:30.151+05:30  INFO 6075 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:14:30.370+05:30  WARN 6075 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T12:14:30.790+05:30  WARN 6075 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T12:14:30.796+05:30  INFO 6075 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T12:14:30.862+05:30  INFO 6075 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61373 (http) with context path ''
+2023-07-17T12:14:30.877+05:30  INFO 6075 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 3.77 seconds (process running for 4.193)
+2023-07-17T12:14:31.011+05:30  INFO 6075 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 3a045087bc11
+2023-07-17T12:14:31.039+05:30  INFO 6075 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T12:14:31.039+05:30  INFO 6075 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T12:14:31.040+05:30  INFO 6075 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T12:14:38.575+05:30  INFO 6077 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 6077 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T12:14:38.578+05:30  INFO 6077 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T12:14:38.621+05:30  INFO 6077 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T12:14:38.622+05:30  INFO 6077 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T12:14:39.368+05:30  INFO 6077 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T12:14:39.427+05:30  INFO 6077 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2023-07-17T12:14:39.944+05:30  INFO 6077 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T12:14:39.966+05:30  INFO 6077 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T12:14:39.978+05:30  INFO 6077 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T12:14:40.031+05:30  INFO 6077 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T12:14:40.032+05:30  INFO 6077 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1409 ms
+2023-07-17T12:14:40.109+05:30  INFO 6077 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T12:14:40.185+05:30  INFO 6077 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T12:14:40.186+05:30  INFO 6077 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T12:14:40.196+05:30  INFO 6077 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T12:14:40.318+05:30  INFO 6077 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T12:14:40.353+05:30  INFO 6077 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T12:14:40.354+05:30  INFO 6077 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T12:14:40.455+05:30  INFO 6077 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:40.542+05:30  INFO 6077 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T12:14:40.705+05:30  INFO 6077 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T12:14:41.139+05:30  INFO 6077 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T12:14:41.157+05:30  INFO 6077 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T12:14:41.387+05:30  WARN 6077 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T12:14:41.785+05:30  WARN 6077 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T12:14:41.791+05:30  INFO 6077 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T12:14:41.864+05:30  INFO 6077 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61390 (http) with context path ''
+2023-07-17T12:14:41.881+05:30  INFO 6077 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 3.644 seconds (process running for 4.085)
+2023-07-17T12:14:42.019+05:30  INFO 6077 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 124eeb0f6fa1
+2023-07-17T12:14:42.047+05:30  INFO 6077 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T12:14:42.047+05:30  INFO 6077 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T12:14:42.049+05:30  INFO 6077 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-17T13:03:31.145+05:30  INFO 6073 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:03:31.149+05:30  INFO 6073 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:03:31.153+05:30  INFO 6073 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T13:03:36.361+05:30  INFO 6075 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:03:36.365+05:30  INFO 6075 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:03:36.383+05:30  INFO 6075 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T13:03:40.661+05:30  INFO 6077 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:03:40.665+05:30  INFO 6077 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:03:40.669+05:30  INFO 6077 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T13:03:56.581+05:30  INFO 6623 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 6623 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T13:03:56.584+05:30  INFO 6623 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:03:56.642+05:30  INFO 6623 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T13:03:56.642+05:30  INFO 6623 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T13:03:57.583+05:30  INFO 6623 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:03:57.637+05:30  INFO 6623 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:03:58.297+05:30  INFO 6623 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T13:03:58.308+05:30  INFO 6623 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:03:58.309+05:30  INFO 6623 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:03:58.380+05:30  INFO 6623 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:03:58.381+05:30  INFO 6623 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1739 ms
+2023-07-17T13:03:58.488+05:30  INFO 6623 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T13:03:58.586+05:30  INFO 6623 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:03:58.588+05:30  INFO 6623 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T13:03:58.602+05:30  INFO 6623 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:03:58.769+05:30  INFO 6623 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:03:58.822+05:30  INFO 6623 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T13:03:58.825+05:30  INFO 6623 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T13:03:58.958+05:30  INFO 6623 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:03:59.096+05:30  INFO 6623 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:03:59.333+05:30  INFO 6623 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:03:59.964+05:30  INFO 6623 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:03:59.966+05:30  INFO 6623 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:04:00.323+05:30  WARN 6623 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:04:00.561+05:30  INFO 6626 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 6626 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T13:04:00.564+05:30  INFO 6626 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:04:00.669+05:30  INFO 6626 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T13:04:00.670+05:30  INFO 6626 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T13:04:01.059+05:30  INFO 6623 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-17T13:04:01.071+05:30  INFO 6623 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:04:01.230+05:30  INFO 6623 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62845 (http) with context path ''
+2023-07-17T13:04:01.259+05:30  INFO 6623 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 5.065 seconds (process running for 5.551)
+2023-07-17T13:04:01.515+05:30  INFO 6623 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as c2a7c907d9b7
+2023-07-17T13:04:01.564+05:30  INFO 6623 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:04:01.564+05:30  INFO 6623 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:04:01.567+05:30  INFO 6623 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-17T13:04:02.278+05:30  INFO 6626 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:04:02.348+05:30  INFO 6626 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:04:03.126+05:30  INFO 6627 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 6627 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T13:04:03.135+05:30  INFO 6627 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:04:03.261+05:30  INFO 6627 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T13:04:03.262+05:30  INFO 6627 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T13:04:03.307+05:30  INFO 6626 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T13:04:03.326+05:30  INFO 6626 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:04:03.327+05:30  INFO 6626 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:04:03.440+05:30  INFO 6626 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:04:03.443+05:30  INFO 6626 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2772 ms
+2023-07-17T13:04:03.649+05:30  INFO 6626 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T13:04:03.820+05:30  INFO 6626 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:04:03.824+05:30  INFO 6626 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T13:04:03.868+05:30  INFO 6626 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:04:04.173+05:30  INFO 6626 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:04:04.242+05:30  INFO 6626 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T13:04:04.246+05:30  INFO 6626 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T13:04:04.460+05:30  INFO 6626 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:04:04.673+05:30  INFO 6626 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:04:05.012+05:30  INFO 6628 --- [restartedMain] com.infosys.ShipperServiceApplication    : Starting ShipperServiceApplication using Java 17.0.6 with PID 6628 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/shipper-service)
+2023-07-17T13:04:05.029+05:30  INFO 6628 --- [restartedMain] com.infosys.ShipperServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:04:05.089+05:30  INFO 6627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:04:05.142+05:30  INFO 6626 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:04:05.153+05:30  INFO 6628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T13:04:05.163+05:30  INFO 6628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T13:04:05.212+05:30  INFO 6627 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:04:06.201+05:30  INFO 6626 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:04:06.226+05:30  INFO 6626 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:04:06.432+05:30  INFO 6627 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T13:04:06.466+05:30  INFO 6627 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:04:06.472+05:30  INFO 6627 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:04:06.586+05:30  INFO 6627 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:04:06.587+05:30  INFO 6627 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3325 ms
+2023-07-17T13:04:06.751+05:30  WARN 6626 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:04:06.773+05:30  INFO 6627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T13:04:06.935+05:30  INFO 6627 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:04:06.940+05:30  INFO 6627 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T13:04:06.973+05:30  INFO 6627 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:04:07.076+05:30  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:04:07.181+05:30  INFO 6628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:04:07.276+05:30  INFO 6627 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:04:07.378+05:30  INFO 6627 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T13:04:07.381+05:30  INFO 6627 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T13:04:07.601+05:30  INFO 6627 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:04:07.698+05:30  WARN 6626 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T13:04:07.715+05:30  INFO 6626 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:04:07.873+05:30  INFO 6627 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:04:07.900+05:30  INFO 6626 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62869 (http) with context path ''
+2023-07-17T13:04:07.935+05:30  INFO 6626 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 7.983 seconds (process running for 8.636)
+2023-07-17T13:04:08.247+05:30  INFO 6626 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as d10c2428d692
+2023-07-17T13:04:08.282+05:30  INFO 6626 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:04:08.283+05:30  INFO 6626 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:04:08.292+05:30  INFO 6626 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-07-17T13:04:08.417+05:30  INFO 6627 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:04:08.741+05:30  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-07-17T13:04:08.763+05:30  INFO 6628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:04:08.764+05:30  INFO 6628 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:04:08.889+05:30  INFO 6628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:04:08.914+05:30  INFO 6628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3749 ms
+2023-07-17T13:04:09.092+05:30  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T13:04:09.233+05:30  INFO 6628 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:04:09.235+05:30  INFO 6628 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T13:04:09.253+05:30  INFO 6628 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:04:09.450+05:30  INFO 6627 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:04:09.469+05:30  INFO 6627 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:04:09.518+05:30  INFO 6628 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:04:09.590+05:30  INFO 6628 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T13:04:09.593+05:30  INFO 6628 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T13:04:09.800+05:30  INFO 6628 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:04:09.917+05:30  WARN 6627 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:04:09.991+05:30  INFO 6628 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:04:10.274+05:30  INFO 6628 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:04:10.569+05:30  WARN 6627 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T13:04:10.582+05:30  INFO 6627 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:04:10.716+05:30  INFO 6627 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62887 (http) with context path ''
+2023-07-17T13:04:10.743+05:30  INFO 6627 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 8.31 seconds (process running for 9.168)
+2023-07-17T13:04:10.970+05:30  INFO 6627 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 2c050bfe05b0
+2023-07-17T13:04:11.001+05:30  INFO 6628 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:04:11.010+05:30  INFO 6628 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:04:11.020+05:30  INFO 6627 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:04:11.020+05:30  INFO 6627 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:04:11.024+05:30  INFO 6627 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-07-17T13:04:11.354+05:30  WARN 6628 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:04:11.963+05:30  WARN 6628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T13:04:11.982+05:30  INFO 6628 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:04:12.096+05:30  INFO 6628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 62892 (http) with context path ''
+2023-07-17T13:04:12.122+05:30  INFO 6628 --- [restartedMain] com.infosys.ShipperServiceApplication    : Started ShipperServiceApplication in 7.941 seconds (process running for 8.933)
+2023-07-17T13:04:12.338+05:30  INFO 6628 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 79d4c011ea8e
+2023-07-17T13:04:12.371+05:30  INFO 6628 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:04:12.372+05:30  INFO 6628 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:04:12.374+05:30  INFO 6628 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-17T13:05:30.923+05:30  INFO 6628 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:05:30.929+05:30  INFO 6628 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:05:30.938+05:30  INFO 6628 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T13:05:32.949+05:30  INFO 6627 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:05:32.960+05:30  INFO 6627 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:05:32.981+05:30  INFO 6627 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T13:05:34.299+05:30  INFO 6626 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:05:34.302+05:30  INFO 6626 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:05:34.306+05:30  INFO 6626 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T13:05:35.465+05:30  INFO 6623 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:05:35.469+05:30  INFO 6623 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:05:35.474+05:30  INFO 6623 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,140 @@
+2023-07-17T13:00:37.738+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 17.0.6 with PID 6601 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service)
+2023-07-17T13:00:37.741+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:00:37.811+05:30  INFO 6601 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-17T13:00:37.811+05:30  INFO 6601 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-17T13:00:38.811+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:00:38.880+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:00:39.578+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8123 (http)
+2023-07-17T13:00:39.608+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:00:39.616+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:00:39.703+05:30  INFO 6601 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:00:39.703+05:30  INFO 6601 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1892 ms
+2023-07-17T13:00:39.822+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17T13:00:39.932+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:00:39.936+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17T13:00:39.956+05:30  INFO 6601 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:00:40.150+05:30  INFO 6601 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:00:40.205+05:30  INFO 6601 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.5.Final
+2023-07-17T13:00:40.208+05:30  INFO 6601 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-07-17T13:00:40.343+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:00:40.465+05:30  INFO 6601 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:00:40.662+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:00:41.161+05:30  INFO 6601 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:00:41.165+05:30  INFO 6601 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:00:41.434+05:30  WARN 6601 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:00:41.908+05:30  WARN 6601 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T13:00:41.915+05:30  INFO 6601 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:00:42.002+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8123 (http) with context path ''
+2023-07-17T13:00:42.022+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Started OrderServiceApplication in 4.683 seconds (process running for 5.225)
+2023-07-17T13:00:42.188+05:30  INFO 6601 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 22af23bca69c
+2023-07-17T13:00:42.223+05:30  INFO 6601 --- [http-nio-8123-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:00:42.224+05:30  INFO 6601 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:00:42.225+05:30  INFO 6601 --- [http-nio-8123-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T13:02:13.032+05:30  INFO 6601 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-17T13:02:13.043+05:30  INFO 6601 --- [Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T13:02:13.044+05:30  INFO 6601 --- [Thread-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T13:02:13.051+05:30  INFO 6601 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:02:13.055+05:30  INFO 6601 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17T13:02:13.060+05:30  INFO 6601 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17T13:02:13.130+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 17.0.6 with PID 6601 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service)
+2023-07-17T13:02:13.131+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:02:13.414+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:02:13.438+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:02:13.538+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8123 (http)
+2023-07-17T13:02:13.539+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:02:13.539+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:02:13.552+05:30  INFO 6601 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:02:13.553+05:30  INFO 6601 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
+2023-07-17T13:02:13.577+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-07-17T13:02:13.580+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:02:13.581+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-07-17T13:02:13.581+05:30  INFO 6601 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:02:13.612+05:30  INFO 6601 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:02:13.616+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:02:13.617+05:30  INFO 6601 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:02:13.626+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:02:13.652+05:30  INFO 6601 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:02:13.653+05:30  INFO 6601 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:02:13.712+05:30  WARN 6601 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:02:13.856+05:30  WARN 6601 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T13:02:13.859+05:30  INFO 6601 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:02:13.876+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8123 (http) with context path ''
+2023-07-17T13:02:13.883+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Started OrderServiceApplication in 0.774 seconds (process running for 97.085)
+2023-07-17T13:02:13.902+05:30  INFO 6601 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-17T13:02:13.912+05:30  INFO 6601 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 22af23bca69c
+2023-07-17T13:02:13.912+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:02:13.912+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:02:13.913+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T13:02:35.455+05:30  INFO 6601 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-17T13:02:35.459+05:30  INFO 6601 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T13:02:35.460+05:30  INFO 6601 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T13:02:35.463+05:30  INFO 6601 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:02:35.464+05:30  INFO 6601 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-07-17T13:02:35.467+05:30  INFO 6601 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-07-17T13:02:35.529+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 17.0.6 with PID 6601 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service)
+2023-07-17T13:02:35.529+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:02:35.731+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:02:35.737+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:02:35.810+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8123 (http)
+2023-07-17T13:02:35.810+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:02:35.811+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:02:35.822+05:30  INFO 6601 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:02:35.823+05:30  INFO 6601 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 292 ms
+2023-07-17T13:02:35.847+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-07-17T13:02:35.850+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:02:35.850+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-07-17T13:02:35.850+05:30  INFO 6601 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:02:35.883+05:30  INFO 6601 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:02:35.889+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:02:35.889+05:30  INFO 6601 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:02:35.897+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:02:35.918+05:30  INFO 6601 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:02:35.919+05:30  INFO 6601 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:02:35.975+05:30  WARN 6601 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:02:36.088+05:30  WARN 6601 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T13:02:36.090+05:30  INFO 6601 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:02:36.104+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8123 (http) with context path ''
+2023-07-17T13:02:36.112+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Started OrderServiceApplication in 0.603 seconds (process running for 119.313)
+2023-07-17T13:02:36.114+05:30  INFO 6601 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-17T13:02:36.124+05:30  INFO 6601 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 22af23bca69c
+2023-07-17T13:02:36.124+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:02:36.124+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:02:36.125+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-07-17T13:02:59.676+05:30  INFO 6601 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-07-17T13:02:59.679+05:30  INFO 6601 --- [Thread-9] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-07-17T13:02:59.680+05:30  INFO 6601 --- [Thread-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-07-17T13:02:59.683+05:30  INFO 6601 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:02:59.684+05:30  INFO 6601 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-07-17T13:02:59.689+05:30  INFO 6601 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-07-17T13:02:59.747+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Starting OrderServiceApplication using Java 17.0.6 with PID 6601 (/Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service/target/classes started by vinod in /Users/vinod/Documents/EDGEVERVE-MAVEN-SPRING-MAY-2023/eclipse-projects/order-service)
+2023-07-17T13:02:59.747+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-07-17T13:02:59.945+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17T13:02:59.953+05:30  INFO 6601 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2023-07-17T13:03:00.040+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8123 (http)
+2023-07-17T13:03:00.055+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17T13:03:00.056+05:30  INFO 6601 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.10]
+2023-07-17T13:03:00.066+05:30  INFO 6601 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17T13:03:00.066+05:30  INFO 6601 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 318 ms
+2023-07-17T13:03:00.088+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-07-17T13:03:00.094+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:tcp://localhost/~/northwind user=ROOT
+2023-07-17T13:03:00.095+05:30  INFO 6601 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-07-17T13:03:00.095+05:30  INFO 6601 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:tcp://localhost/~/northwind'
+2023-07-17T13:03:00.120+05:30  INFO 6601 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17T13:03:00.125+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:03:00.126+05:30  INFO 6601 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-07-17T13:03:00.132+05:30  INFO 6601 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-07-17T13:03:00.150+05:30  INFO 6601 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17T13:03:00.150+05:30  INFO 6601 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:03:00.199+05:30  WARN 6601 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-17T13:03:00.303+05:30  WARN 6601 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-07-17T13:03:00.307+05:30  INFO 6601 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-07-17T13:03:00.319+05:30  INFO 6601 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8123 (http) with context path ''
+2023-07-17T13:03:00.327+05:30  INFO 6601 --- [restartedMain] c.i.o.OrderServiceApplication            : Started OrderServiceApplication in 0.597 seconds (process running for 143.528)
+2023-07-17T13:03:00.328+05:30  INFO 6601 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-07-17T13:03:00.337+05:30  INFO 6601 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 22af23bca69c
+2023-07-17T13:03:00.337+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17T13:03:00.337+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-17T13:03:00.339+05:30  INFO 6601 --- [http-nio-8123-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-07-17T13:05:36.919+05:30  INFO 6601 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17T13:05:36.921+05:30  INFO 6601 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-07-17T13:05:36.924+05:30  INFO 6601 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.

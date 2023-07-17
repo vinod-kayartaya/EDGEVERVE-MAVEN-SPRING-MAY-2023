@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shipper dashbaord</title>
+</head>
+<body>
+
+	<h1>Shipper dashboard</h1>
+	<hr />
+	
+	<h3>List of all shippers</h3>
+	<ul id="shipperList">
+	</ul>
+	
+	<script>
+	
+	fetch('http://localhost:8080/api/shippers')
+		.then(resp=>resp.json())
+		.then(shippers=>{
+			let shipperList = shippers.map(s=>`<li>${s.companyName}</li>`).join('');
+			document.getElementById('shipperList').innerHTML = shipperList;
+		})
+		.catch(console.log);
+	
+	</script>
+	
+</body>
+</html>
