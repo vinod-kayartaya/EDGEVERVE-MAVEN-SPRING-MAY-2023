@@ -18,10 +18,13 @@ import com.infosys.dto.CustomResponseRecord;
 import com.infosys.dto.ShipperRecord;
 import com.infosys.service.ShipperService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/api/shippers")
 //@CrossOrigin(origins = {"http://localhost:5500", "http://localhost:3000"})
 @CrossOrigin
+@Slf4j
 public class ShipperController {
 
 	@Autowired
@@ -41,6 +44,7 @@ public class ShipperController {
 
 	@GetMapping("/{id}")
 	public ResponseEntity<?> handleGetOne(@PathVariable Integer id) {
+		log.info("sending data for shipper id {}", id);
 		ShipperRecord shipperRecord = service.getShipperById(id);
 
 		if (shipperRecord == null) {

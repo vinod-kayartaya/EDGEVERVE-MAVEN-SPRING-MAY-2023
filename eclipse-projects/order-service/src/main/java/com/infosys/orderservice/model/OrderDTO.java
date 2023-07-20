@@ -14,7 +14,7 @@ public class OrderDTO {
 
 	private Date shippedDate;
 
-	private String customerId;
+	private CustomerDTO customer;
 
 	private ShipperRecord shipper;
 
