@@ -17,7 +17,7 @@
 
     <script>
 
-        fetch('http://localhost:8080/api/shippers')
+        fetch('http://SHIPPER-SERVICE/api/shippers')
             .then(resp => resp.json())
             .then(shippers => {
                 let shipperList = shippers.map(s => `<li>${s.companyName}</li>`).join('');
