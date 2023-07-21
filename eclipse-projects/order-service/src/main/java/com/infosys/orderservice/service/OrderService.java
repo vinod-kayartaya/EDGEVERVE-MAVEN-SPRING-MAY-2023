@@ -1,5 +1,6 @@
 package com.infosys.orderservice.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
@@ -8,9 +9,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import com.infosys.orderservice.entity.LineItem;
 import com.infosys.orderservice.entity.Order;
 import com.infosys.orderservice.model.CustomerDTO;
+import com.infosys.orderservice.model.LineItemDTO;
 import com.infosys.orderservice.model.OrderDTO;
+import com.infosys.orderservice.model.ProductRecord;
 import com.infosys.orderservice.model.ShipperRecord;
 import com.infosys.orderservice.repository.OrderRepository;
 
@@ -29,6 +33,9 @@ public class OrderService {
 	@Value("${customer.service-url}")
 	private String customerServiceUrl;
 	
+	@Value("${product.service-url}")
+	private String productServiceUrl;
+		
 	@Autowired
 	private WebClient.Builder webClientBuilder;
 	
@@ -43,6 +50,17 @@ public class OrderService {
 		OrderDTO dto = new OrderDTO();
 		Order order = result.get();
 		BeanUtils.copyProperties(order, dto);
+		
+		try {
+			List<LineItemDTO> lineItemDTOs = order.getLineItems()
+				.stream()
+				.map(this::toLineItemDTO)
+				.toList();
+			dto.setLineItems(lineItemDTOs);
+		}
+		catch(Exception ex) {
+			log.warn("", ex);
+		}
 		
 		// get the shipper data from the shipper-service and add to dto
 		try {
@@ -74,5 +92,24 @@ public class OrderService {
 		
 		return dto;
 			
+	}
+	
+	LineItemDTO toLineItemDTO(LineItem li) {
+		LineItemDTO dto = new LineItemDTO();
+		BeanUtils.copyProperties(li, dto);
+		try {
+			ProductRecord product = webClientBuilder.build()
+				.get()
+				.uri(productServiceUrl +li.getProductId())
+				.retrieve()
+				.bodyToMono(ProductRecord.class)
+				.block();
+			dto.setProduct(product);
+		}
+		catch(Exception e) {
+			// duck and log the exception
+			log.warn("Error while trying to get Customer data", e);
+		}
+		return dto;
 	}
 }

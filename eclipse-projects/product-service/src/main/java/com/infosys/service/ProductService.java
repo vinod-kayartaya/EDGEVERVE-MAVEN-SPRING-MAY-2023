@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import com.infosys.entity.Product;
@@ -30,6 +29,9 @@ public class ProductService {
 	
 	@Value("${supplier.service.url}")
 	private String supplierServiceUrl;
+	
+	@Autowired
+	private WebClient.Builder webClientBuilder;
 
 	private ProductDTO getProductDTO(Product product) {
 		ProductDTO p1 = ProductDTO.builder()
@@ -46,8 +48,12 @@ public class ProductService {
 		// we need to go and get the category data from the category-service
 		// and set that to the p1.category
 		try {
-			RestTemplate template = new RestTemplate();
-			CategoryDTO c1 = template.getForObject(categoryServiceUrl+ product.getCategoryId(), CategoryDTO.class);
+			CategoryDTO c1 = webClientBuilder.build()
+					.get()
+					.uri(categoryServiceUrl + product.getCategoryId())
+					.retrieve()
+					.bodyToMono(CategoryDTO.class)
+					.block();
 			p1.setCategory(c1);
 		} catch (Exception e) {
 			log.warn("error", e);
@@ -56,8 +62,9 @@ public class ProductService {
 		// get the supplier information based on product.supplierId
 		try {
 			
-			SupplierDTO s1 = WebClient.create(supplierServiceUrl+product.getSupplierId())
+			SupplierDTO s1 = webClientBuilder.build()
 				.get()
+				.uri(supplierServiceUrl+product.getSupplierId())
 				.retrieve()
 				.bodyToMono(SupplierDTO.class)
 				.block();
