@@ -24,10 +24,10 @@ public class ProductService {
 	@Autowired
 	private ProductRepository repo;
 	
-	@Value("${category.service.url}")
+	@Value("${category.service-url}")
 	private String categoryServiceUrl;
 	
-	@Value("${supplier.service.url}")
+	@Value("${supplier.service-url}")
 	private String supplierServiceUrl;
 	
 	@Autowired
