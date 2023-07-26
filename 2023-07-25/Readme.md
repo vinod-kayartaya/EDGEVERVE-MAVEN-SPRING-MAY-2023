@@ -1,3 +1,5 @@
+![](../2023-07-24/docker.dio.png)
+
 Some docker commands:
 
 - `docker image ls`
@@ -28,9 +30,8 @@ docker run -d \
     -e MYSQL_ROOT_PASSWORD=Welcome#123 \
     -v mysql8volume:/var/lib/mysql \
     mysql:latest
-    
-```
 
+```
 
 Some mysql commands:
 
